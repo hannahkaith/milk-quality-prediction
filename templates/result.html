@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Milk Quality Prediction Result</title>
+    <link rel="stylesheet" href="/static/result.css" type="text/css">
+</head>
+
+<body>
+    <div class="center">
+        <div class="result">
+
+            <!--Title-->
+            <h2>The predicted milk quality is → <span style="color: #597b9e;">{{ prediction }}</span></h2>
+            
+            <!--Result Image-->
+            <img src="{{ image_url }}" class="result-image" alt="The Quality of Milk!">
+            <br><br>
+
+            <form action="/">
+                <button type="submit">Go Back to the Form</button>
+            </form>
+
+        </div>
+    </div>
+</body>
+
+</html>
