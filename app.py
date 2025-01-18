@@ -3,12 +3,12 @@ import numpy as np
 import pandas as pd
 from flask import Flask, request, render_template # helps create the web app
 from sklearn.neighbors import KNeighborsClassifier
-from sklearn.preprocessing import LabelEncoder
+from sklearn.preprocessing import LabelEncoder # to encode numerical labels
 from sklearn.model_selection import train_test_split
+
 
 # Initialize Flask app
 application = Flask(__name__)
-
 
 
 # Load the data and train the model
@@ -17,6 +17,7 @@ label_encoder = LabelEncoder()
 data['Grade'] = label_encoder.fit_transform(data['Grade']) 
     # this is done as this column contains categorical data such as 'low', 'medium', etc.
 
+# define features and target (Grade Column)
 X = data.drop('Grade', axis=1)
 y = data['Grade']
 
