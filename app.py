@@ -33,7 +33,7 @@ knn.fit(X_train, y_train)
 # Define the function (for predicting the Milk Quality)
 def predicting_milkQuality(pH, Temprature, Taste, Odor, Fat, Turbidity, Colour):
 
-    # this block of code is to convert gr.radio strings into integers !
+    # this block of code is to convert strings into integers !
     Taste = int(Taste)
     Odor = int(Odor)
     Fat = int(Fat)
