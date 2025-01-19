@@ -14,6 +14,7 @@ body{
     height: 100vh;   
 }
 
+
 /* result section css properties */
 .result {
     background-color: #F8FAFC;
@@ -33,11 +34,13 @@ h2{
 
 .result-image {
     width: 320px; 
-    height: 320px; /*for the image sizing*/
+    height: 320px; /* for the image sizing */
     border: 2px dashed #27425c;
     margin-top: 7px;
 }
 
+
+/* button css properties */
 button {
     width: auto; 
     border-radius: 8px;
